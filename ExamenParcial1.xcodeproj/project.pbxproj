@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806FD554223EE6F5004CBDBB /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FD553223EE6F5004CBDBB /* AddProductViewController.swift */; };
 		80747292223D8E79009534BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80747291223D8E79009534BF /* AppDelegate.swift */; };
 		80747294223D8E79009534BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80747293223D8E79009534BF /* ViewController.swift */; };
 		80747297223D8E79009534BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80747295223D8E79009534BF /* Main.storyboard */; };
 		80747299223D8E88009534BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80747298223D8E88009534BF /* Assets.xcassets */; };
 		8074729C223D8E88009534BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8074729A223D8E88009534BF /* LaunchScreen.storyboard */; };
+		807472A4223DD49C009534BF /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807472A3223DD49C009534BF /* Usuarios.swift */; };
+		807472A6223DDBBE009534BF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807472A5223DDBBE009534BF /* SignUpViewController.swift */; };
+		80C8710C223E2BEE0009F60F /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8710B223E2BEE0009F60F /* Producto.swift */; };
+		80C87110223E37EB0009F60F /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8710F223E37EB0009F60F /* CustomCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		806FD553223EE6F5004CBDBB /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		8074728E223D8E79009534BF /* ExamenParcial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenParcial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80747291223D8E79009534BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80747293223D8E79009534BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		80747298223D8E88009534BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8074729B223D8E88009534BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8074729D223D8E88009534BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807472A3223DD49C009534BF /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
+		807472A5223DDBBE009534BF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		80C8710B223E2BEE0009F60F /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		80C8710F223E37EB0009F60F /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				80747298223D8E88009534BF /* Assets.xcassets */,
 				8074729A223D8E88009534BF /* LaunchScreen.storyboard */,
 				8074729D223D8E88009534BF /* Info.plist */,
+				807472A3223DD49C009534BF /* Usuarios.swift */,
+				807472A5223DDBBE009534BF /* SignUpViewController.swift */,
+				80C8710B223E2BEE0009F60F /* Producto.swift */,
+				80C8710F223E37EB0009F60F /* CustomCellTableViewCell.swift */,
+				806FD553223EE6F5004CBDBB /* AddProductViewController.swift */,
 			);
 			path = ExamenParcial1;
 			sourceTree = "<group>";
@@ -136,6 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80747294223D8E79009534BF /* ViewController.swift in Sources */,
+				806FD554223EE6F5004CBDBB /* AddProductViewController.swift in Sources */,
+				807472A4223DD49C009534BF /* Usuarios.swift in Sources */,
+				80C87110223E37EB0009F60F /* CustomCellTableViewCell.swift in Sources */,
+				80C8710C223E2BEE0009F60F /* Producto.swift in Sources */,
+				807472A6223DDBBE009534BF /* SignUpViewController.swift in Sources */,
 				80747292223D8E79009534BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,15 +302,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RS5D8KND98;
 				INFOPLIST_FILE = ExamenParcial1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avina.ExamenParcial1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,15 +323,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RS5D8KND98;
 				INFOPLIST_FILE = ExamenParcial1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avina.ExamenParcial1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
