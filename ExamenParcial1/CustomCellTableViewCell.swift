@@ -18,12 +18,10 @@ class CustomCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        imgFoto.image = UIImage(named: "portadamaria")
+        txtTitle.text = "maria"
+        txtDescription.text = "maria"
+        txtPrice.text = "mariaa"
     }
 
 }
@@ -47,5 +45,19 @@ class CustomCellTableViewController: UITableViewController {
         cell.txtPrice.text = p[selectedIndexPath.row]["price"]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return  40
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return product.listProducts.count
     }
 }
