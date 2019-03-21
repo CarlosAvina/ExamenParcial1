@@ -18,11 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MVj-02-0qy">
-                                <rect key="frame" x="106" y="90" width="163" height="157"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MVj-02-0qy">
+                                <rect key="frame" x="106" y="90" width="163" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="apN-Nv-lUG"/>
+                                    <constraint firstAttribute="height" constant="163" id="ffs-Lo-3gQ"/>
+                                </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-5a-FIH">
-                                <rect key="frame" x="15" y="292" width="345" height="81"/>
+                                <rect key="frame" x="15" y="298" width="345" height="81"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A8-P9-u4v">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
@@ -37,9 +41,12 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="password"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zxp-OC-aAc" firstAttribute="top" secondItem="5A8-P9-u4v" secondAttribute="bottom" constant="20" id="d84-p1-Eyo"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-aE-yyA">
-                                <rect key="frame" x="105" y="411" width="165" height="30"/>
+                                <rect key="frame" x="105" y="419" width="165" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPb-rp-r2R">
                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="30"/>
@@ -63,14 +70,13 @@
                         <constraints>
                             <constraint firstItem="vHq-aE-yyA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="5n4-ug-GhN"/>
                             <constraint firstItem="MVj-02-0qy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="6uS-2M-ip7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHq-aE-yyA" secondAttribute="bottom" constant="226" id="9P0-Zx-Sm3"/>
                             <constraint firstItem="vHq-aE-yyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HfA-SK-Yop"/>
                             <constraint firstItem="MVj-02-0qy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="ODF-Mc-b0K"/>
                             <constraint firstItem="Ucb-5a-FIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Qpa-zV-MJY"/>
                             <constraint firstItem="Ucb-5a-FIH" firstAttribute="top" secondItem="MVj-02-0qy" secondAttribute="bottom" constant="45" id="Sye-4W-QOG"/>
+                            <constraint firstItem="vHq-aE-yyA" firstAttribute="top" secondItem="Ucb-5a-FIH" secondAttribute="bottom" constant="40" id="VDP-e3-3u9"/>
                             <constraint firstItem="MVj-02-0qy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebR-Rj-Wb5"/>
                             <constraint firstItem="Ucb-5a-FIH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fam-dn-GoE"/>
-                            <constraint firstItem="vHq-aE-yyA" firstAttribute="top" secondItem="Ucb-5a-FIH" secondAttribute="bottom" constant="38" id="ncY-Zu-ufP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ucb-5a-FIH" secondAttribute="trailing" constant="15" id="uRX-1B-gIn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -311,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nl-sm-dgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="143"/>
+            <point key="canvasLocation" x="2180" y="142.57871064467767"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3mU-IE-LIN">

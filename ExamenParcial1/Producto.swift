@@ -10,28 +10,25 @@ import Foundation
 
 var product = Product()
 
-class Product {
-    var Title : String = ""
-    var Description : String = ""
-    var Price : Float = 0
+class Product : NSObject {
     
     var listProducts = [
         [
             "title": "Keith Hansen",
-            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
-            "infoImage": "info image 1",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu",
+            "infoImage": "portadamaria",
             "price": "$99.00"
         ],
         [
             "title": "Keith Perry",
-            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
-            "infoImage": "info image 1",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu",
+            "infoImage": "portadamaria",
             "price": "$99.00"
         ],
         [
             "title": "Keith Martha",
-            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
-            "infoImage": "info image 1",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu",
+            "infoImage": "portadamaria",
             "price": "$99.00"
         ]
     ]

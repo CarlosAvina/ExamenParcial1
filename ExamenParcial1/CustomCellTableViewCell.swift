@@ -24,6 +24,19 @@ class CustomCellTableViewCell: UITableViewCell {
 
 class CustomCellTableViewController: UITableViewController {
     
+    override func viewDidLoad() {
+        
+        self.refreshControl = pullToRefreshControl
+        pullToRefreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+    }
+    
+    let pullToRefreshControl = UIRefreshControl()
+    
+    @objc func refreshTable() {
+        self.tableView.reloadData()
+        pullToRefreshControl.endRefreshing()
+    }
+    
     @IBAction func onLogout(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -35,7 +48,13 @@ class CustomCellTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "custom_cell", for: indexPath) as! CustomCellTableViewCell
         
         let p = product.listProducts
-        cell.imgFoto.image = UIImage(named: "portadamaria")
+        if (indexPath.row == 0) || (indexPath.row == 1) || (indexPath.row == 2) {
+            cell.imgFoto.image = UIImage(named: p[indexPath.row]["infoImage"]!)
+        } else {
+            let data = UserDefaults.standard.object(forKey: p[indexPath.row]["title"]!)
+            cell.imgFoto.image = UIImage(data: data as! Data)
+        }
+        
         cell.txtTitle.text = p[indexPath.row]["title"]
         cell.txtDescription.text = p[indexPath.row]["description"]
         cell.txtPrice.text = p[indexPath.row]["price"]

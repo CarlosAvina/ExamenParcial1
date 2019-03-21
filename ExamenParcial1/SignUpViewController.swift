@@ -76,6 +76,12 @@ class SignUpViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
             print(users.listUsers)
+            
+            txtUser.text = ""
+            txtPassword.text = ""
+            txtConfirmPassword.text = ""
+            
+            _ = navigationController?.popViewController(animated: true)
         }
     }
     

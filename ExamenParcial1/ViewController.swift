@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         
         if segue.identifier == "segue_entrar" {
             _ = segue.destination as! UINavigationController
+            
+            txtUser.text = ""
+            txtPassword.text = ""
         } else if segue.identifier == "segue_signup" {
             _ = segue.destination
         }
@@ -57,6 +60,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.txtUser.delegate = self as? UITextFieldDelegate
+        self.txtPassword.delegate = self as? UITextFieldDelegate
+        
+        imgLogo.layer.cornerRadius = imgLogo.frame.width/2
+        imgLogo.layer.masksToBounds =  true
+        imgLogo.image = UIImage(named: "wish2")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 
