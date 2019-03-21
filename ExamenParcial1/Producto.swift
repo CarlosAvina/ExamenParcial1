@@ -18,19 +18,19 @@ class Product {
     var listProducts = [
         [
             "title": "Keith Hansen",
-            "description": "contact image 1",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
             "infoImage": "info image 1",
             "price": "$99.00"
         ],
         [
-            "title": "Keith Hansen",
-            "description": "contact image 1",
+            "title": "Keith Perry",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
             "infoImage": "info image 1",
             "price": "$99.00"
         ],
         [
-            "title": "Keith Hansen",
-            "description": "contact image 1",
+            "title": "Keith Martha",
+            "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore",
             "infoImage": "info image 1",
             "price": "$99.00"
         ]

@@ -18,12 +18,8 @@ class CustomCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imgFoto.image = UIImage(named: "portadamaria")
-        txtTitle.text = "maria"
-        txtDescription.text = "maria"
-        txtPrice.text = "mariaa"
+        
     }
-
 }
 
 class CustomCellTableViewController: UITableViewController {
@@ -40,9 +36,9 @@ class CustomCellTableViewController: UITableViewController {
         
         let p = product.listProducts
         cell.imgFoto.image = UIImage(named: "portadamaria")
-        cell.txtTitle.text = p[selectedIndexPath.row]["title"]
-        cell.txtDescription.text = p[selectedIndexPath.row]["description"]
-        cell.txtPrice.text = p[selectedIndexPath.row]["price"]
+        cell.txtTitle.text = p[indexPath.row]["title"]
+        cell.txtDescription.text = p[indexPath.row]["description"]
+        cell.txtPrice.text = p[indexPath.row]["price"]
         
         return cell
     }
